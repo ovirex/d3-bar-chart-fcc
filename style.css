@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+svg {
+    display: block;
+    margin-inline: auto;
+    overflow: visible;
+}
+
+.chart-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.bar {
+    fill: #222e50;
+}
+
+.bar:hover {
+    fill: #007991;
+}
+
+#tooltip {
+    background-color: #e63462;
+    width: 140px;
+    height: 20px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 2px 2px 10px 2px #e6346252, 1px 1px 5px 1px #e6346252;
+
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    transition: opacity 350ms ease-in;
+}
+
+#tooltip.show {
+    opacity: 1;
+}
