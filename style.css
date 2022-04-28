@@ -25,8 +25,12 @@ svg {
     fill: #222e50;
 }
 
-.bar:hover {
+.bar:nth-child(odd) {
     fill: #007991;
+}
+
+.bar:hover {
+    fill: #e63462;
 }
 
 #tooltip {
