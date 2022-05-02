@@ -75,7 +75,7 @@ d3.json(
 
             tooltip.style(
                 "transform",
-                `translate(${d.offsetX + 10}px,${d.offsetY + 10}px)`
+                `translate(${d.offsetX + 5}px,${d.offsetY + 5}px)`
             );
             tooltip.style("transform-origin", "0 0");
         })
